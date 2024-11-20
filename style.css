@@ -31,3 +31,10 @@ button{
     border-radius: 10px;
     padding: 40px;    
 }
+#radioBox  label  {
+    display: flex !important;
+    font-size: 15px;
+    margin: 0px;
+    font-weight: 300;
+    
+}

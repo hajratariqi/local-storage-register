@@ -6,6 +6,23 @@ const register = () =>{
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
 
+    let isChecked = false
+    let radioBox = document.getElementById('radioBox')
+    let radioaBtn = radioBox.querySelectorAll('input');
+
+    for(var key of radioaBtn){
+        if(key.checked){
+            isChecked = true
+        }
+    }
+
+    if(isChecked){
+        console.log('thanks for selecting');
+    }else{
+        console.log('please select input');
+    }
+
+
     let saveDate = localStorage.getItem('user')
     let oldUser = saveDate ? JSON.parse(saveDate) : []
 
@@ -13,7 +30,7 @@ const register = () =>{
         const newUser = {name: name,  email: email,  password: password};
         oldUser.push(newUser)
         localStorage.setItem("user", JSON.stringify(oldUser))
-        location.href = 'login.html'
+        // location.href = 'login.html'
         console.log('Registerd successfully ');
     }else{
         console.log('sorry user not fount');
