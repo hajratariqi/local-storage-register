@@ -2,19 +2,21 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 label{
     display: block;
     margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 input{
-    padding: 5px;
+    padding: 10px;
+    margin-top: 5px;
     display: block;
     border-radius: 5px;
     border: 1px solid #dadada;
-}
-input::placeholder{
-    font-size: 10px;
 }
 button{
     color: white;
@@ -23,4 +25,9 @@ button{
     padding: 10px 20px;
     border-radius: 10px;
     background-color: black;
+}
+.main{
+    box-shadow: 1px 1px 4px #dadada;
+    border-radius: 10px;
+    padding: 40px;    
 }
