@@ -14,6 +14,7 @@ const register = () =>{
         oldUser.push(newUser)
         localStorage.setItem("user", JSON.stringify(oldUser))
         location.href = 'login.html'
+        console.log('Registerd successfully ');
     }else{
         console.log('sorry user not fount');
     }
